@@ -1,0 +1,157 @@
+<html lang="eng">
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  padding-top: 80px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1em;
+  margin: auto;
+
+          background-color: #6666ff;
+          background-image: url("images/City_Insurance_Compact.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          background-size: 45%;
+}
+form {
+  line-height: 1em;
+          background-image: url("images/City_Insurance.png");
+          background-size: 50%;
+          background-repeat: no-repeat;
+          background-position: top 1% center;
+
+          background-color: rgba(102, 153, 153, .9);
+          border-radius:50px 50px;
+          padding: 8% 4% 1% 4%;
+          width: 35%;
+          margin: auto;
+}
+label {
+  font-size: .8em;
+}
+#name-box {
+  float: left;
+}
+
+#last-name-box {
+  float: right;
+}
+
+#email-box {
+  float: left;
+}
+#phone-number {
+  float: right;
+}
+#submit {
+  width: 150px;
+  height: 35px;
+  border-radius: 20px 20px;
+}
+#name {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px 5px;
+}
+#last_name{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px 5px;
+}
+#email {
+  width: 240px;
+  height: 30px;
+  border-radius: 5px 5px;
+}
+#phone {
+  width: 130px;
+  height: 30px;
+  border-radius: 5px 5px;
+}
+#number {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px 5px;
+}
+#quote {
+  width: auto;
+  height: 30px;
+  border-radius: 5px 5px;
+}
+</style>
+  </head>
+  <body>
+
+<h1 id="title">Get a Free Insurance Quote</h1>
+
+      <p id="discription">
+        We work multiple insurance companies to help you save onn insurance premium while still getting the right coverage.
+      </p>
+
+<form id="survey-form>
+
+        <p id="intro">Tell us more about yourself.</p>
+
+<div id="name-box">
+<label id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="First Name" required></input>
+</div>
+
+<div id="last-name-box">
+<label id="last_name-label">Last Name: </label>
+        <input type="text" name="last_name" id="last_name" placeholder="Last Name" required ></input>
+</div>
+<br><br>
+
+<div id="email-box">
+<label id="email-label"> Email: </label>
+        <input type="email" name="email" id="email" placeholder=" Email" required></input>
+</div>
+
+<div id="phone-number">
+<label id="phone-label"> Contact Number: </label>
+        <input type="tel" name="phone" id="phone" placeholder="123 456 7890" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required></input>
+</div>
+
+<br><br>
+
+<label id="number-label"> Number of Drivers in Home: </label>
+        <input type="number" name="number" id="number" min="0" max="9" placeholder="0-9" required></input>
+
+<br><br>
+
+<label id="dropdown" for="quote" required>I would like the following quote.</label>
+      <select id="quote" name="quote">
+          <option value="Auto Only">Auto Insurance Only</option>
+          <option value="Home Only">Home Insurance Only</option>
+          <option value="Auto & Home">Auto & Home Insurance Quote</option>
+      </select>
+
+<br>
+
+<p>Are you currently insured?</p>
+<input type="radio" name="history" value="yes"> Yes
+<input type="radio" name="history" value="no"> No
+
+<br>
+
+<p>The best way to contact you?</p>
+<input type="checkbox" id="contact" name="email_me" value="Email Me">Email Me
+<input type="checkbox" id="contact" name="call_me" value="Call Me">Call Me
+
+<br><br>
+
+
+<textarea id="textbox" name="extra_details" rows="5" cols="80">Tell us more about your insurance needs.</textarea>
+
+<br><br>
+
+<input type="submit" id="submit">
+  </form>
+
+  <br><br><br>
+
+</body>
